@@ -36,10 +36,11 @@ void MooseSays(string message)
     ");
 }
 
-// MooseSays("H I, I'M  E N T H U S I A S T I C !");
-// MooseSays("Howdy Doody");
-// MooseSays("I really am enthusiastic");
+//Moose speaks
+MooseSays("H I, I'M  E N T H U S I A S T I C !");
+MooseSays("I really am enthusiastic");
 
+//Ask function
 bool MooseAsks(string question)
 {
     Console.Write($"{question} (Y/N): ");
@@ -61,5 +62,62 @@ bool MooseAsks(string question)
     }
 }
 
+//Moose Questions
 MooseAsks("Is you dog cute?");
+void CanadaQuestion()
+{
+    bool isTrue = MooseAsks("Is Canada real?");
+    if (isTrue)
+    {
+       MooseSays("Really? It seems very unlikely.");
+    }
+    else
+    {
+       MooseSays("I  K N E W  I T !!!");
+    }
 
+}
+void EnthusiasticQuestion()
+{
+    bool isEnthusiastic = MooseAsks("Are you enthusiastic?");
+    if (isEnthusiastic)
+    {
+        MooseSays("Yay!");
+    }
+    else
+    {
+        MooseSays("You should try it!");
+    }
+}
+
+void LoveCSharpQuestion()
+{
+    bool doesLoveCSharp = MooseAsks("Do you love C# yet?");
+    if (doesLoveCSharp)
+    {
+        MooseSays("Good job sucking up to your instructor!");
+    }
+    else
+    {
+        MooseSays("You will...oh, yes, you will...");
+    }
+}
+
+void SecretQuestion()
+{
+    bool wantsSecret = MooseAsks("Do you want to know a secret?");
+    if (wantsSecret)
+    {
+        MooseSays("ME TOO!!!! I love secrets...tell me one!");
+    }
+    else
+    {
+        MooseSays("Oh, no...secrets are the best, I love to share them!");
+    }
+}
+
+//More Questions, these ones have responses
+CanadaQuestion();
+EnthusiasticQuestion();
+LoveCSharpQuestion();
+SecretQuestion();
