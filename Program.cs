@@ -1,8 +1,6 @@
 ﻿using System;
 
-Console.WriteLine("Welcome to Enthusiastic Moose Simulator!");
-Console.WriteLine("----------------------------------------");
-Console.WriteLine();
+
 
 void MooseSays(string message)
 {
@@ -36,9 +34,7 @@ void MooseSays(string message)
     ");
 }
 
-//Moose speaks
-MooseSays("H I, I'M  E N T H U S I A S T I C !");
-MooseSays("I really am enthusiastic");
+
 
 //Ask function
 bool MooseAsks(string question)
@@ -62,8 +58,7 @@ bool MooseAsks(string question)
     }
 }
 
-//Moose Questions
-MooseAsks("Is you dog cute?");
+//Moose Question functions
 void CanadaQuestion()
 {
     bool isTrue = MooseAsks("Is Canada real?");
@@ -116,8 +111,23 @@ void SecretQuestion()
     }
 }
 
-//More Questions, these ones have responses
-CanadaQuestion();
-EnthusiasticQuestion();
-LoveCSharpQuestion();
-SecretQuestion();
+
+
+void Main()
+{
+    Console.WriteLine("Welcome to Enthusiastic Moose Simulator!");
+    Console.WriteLine("----------------------------------------");
+    Console.WriteLine();
+
+    //Moose speaks
+    MooseSays("H I, I'M  E N T H U S I A S T I C !");
+    MooseSays("I really am enthusiastic");
+
+    //More Questions, these ones have responses
+    CanadaQuestion();
+    EnthusiasticQuestion();
+    LoveCSharpQuestion();
+    SecretQuestion();
+}
+
+Main();
