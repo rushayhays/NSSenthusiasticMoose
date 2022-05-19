@@ -36,7 +36,30 @@ void MooseSays(string message)
     ");
 }
 
-MooseSays("H I, I'M  E N T H U S I A S T I C !");
-MooseSays("Howdy Doody");
-MooseSays("I really am enthusiastic");
+// MooseSays("H I, I'M  E N T H U S I A S T I C !");
+// MooseSays("Howdy Doody");
+// MooseSays("I really am enthusiastic");
+
+bool MooseAsks(string question)
+{
+    Console.Write($"{question} (Y/N): ");
+    string answer = Console.ReadLine().ToLower();
+
+    while (answer != "y" && answer != "n")
+    {
+        Console.Write($"{question} (Y/N): ");
+        answer = Console.ReadLine().ToLower();
+    }
+
+    if (answer == "y")
+    {
+        return true;
+    }
+    else
+    {
+        return false;
+    }
+}
+
+MooseAsks("Is you dog cute?");
 
